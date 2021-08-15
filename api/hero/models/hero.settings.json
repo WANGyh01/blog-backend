@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "heroes",
+  "info": {
+    "name": "Hero"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "footer": {
+      "type": "text"
+    },
+    "site_name": {
+      "type": "text"
+    },
+    "site_description": {
+      "type": "text"
+    },
+    "hero_title": {
+      "type": "text"
+    },
+    "hero_subtitle": {
+      "type": "text"
+    },
+    "dark_mode": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "Post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "path": {
+      "type": "string",
+      "required": true
+    },
+    "categories": {
+      "via": "posts",
+      "collection": "category"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "datetime",
+      "default": "2021-08-15T04:00:00.000Z"
+    },
+    "project_bg_color": {
+      "type": "string"
+    },
+    "project_fg_color": {
+      "type": "string"
+    }
+  }
+}

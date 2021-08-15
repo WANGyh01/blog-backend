@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "journal_posts",
+  "info": {
+    "name": "Journalpost",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "path": {
+      "type": "string"
+    }
+  }
+}
